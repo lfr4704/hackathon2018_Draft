@@ -1,0 +1,220 @@
+
+label {
+  display: inline;
+}
+
+input {
+  display: inline;
+}
+
+p {
+  font-size: 24px;
+  margin: none;
+  /* display: inline; */
+}
+
+a, a:hover {
+  color:white;
+  text-decoration:none;
+}
+
+
+/* Slider CSS Start */
+
+input[type=range] {
+  -webkit-appearance: none;
+  width: 60%;
+  margin: 14.95px 0;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 6.1px;
+  cursor: pointer;
+  box-shadow: 0.9px 0.9px 4.5px #000000, 0px 0px 0.9px #0d0d0d;
+  background: #3071a9;
+  border-radius: 13.2px;
+  border: 0px solid #5a0101;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #534a7f;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -14.95px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #72a8d7;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 6.1px;
+  cursor: pointer;
+  box-shadow: 0.9px 0.9px 4.5px #000000, 0px 0px 0.9px #0d0d0d;
+  background: #3071a9;
+  border-radius: 13.2px;
+  border: 0px solid #5a0101;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #534a7f;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 6.1px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #173752;
+  border: 0px solid #5a0101;
+  border-radius: 26.4px;
+  box-shadow: 0.9px 0.9px 4.5px #000000, 0px 0px 0.9px #0d0d0d;
+}
+input[type=range]::-ms-fill-upper {
+  background: #3071a9;
+  border: 0px solid #5a0101;
+  border-radius: 26.4px;
+  box-shadow: 0.9px 0.9px 4.5px #000000, 0px 0px 0.9px #0d0d0d;
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #534a7f;
+  cursor: pointer;
+  height: 6.1px;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #3071a9;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #72a8d7;
+}
+
+
+/* Slider End */
+
+.container-60 {
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  width: 60em;
+}
+
+.bmr_input {
+  width:40%;
+  margin: 10px;
+}
+
+
+.form {
+  /* background-color: ; */
+  background-color: #DDDBE5;
+  border: 5px solid #534A7F;
+}
+
+.myMessage {
+  position: relative;
+  right: 50px;
+  /* text-align: right; */
+}
+
+.myContainer {
+  /* width: 50%; */
+}
+
+.testText {
+  font-size: 24px;
+  display: inline;
+  padding-right: 10px;
+}
+
+.testDiv{
+  /* border:1px solid black; */
+  /* width: 90%; */
+  text-align: left;
+  display: inline-block;
+  /* padding: 25px 50px; */
+  padding: 5px;
+}
+
+.slider {
+  display: inline;
+}
+
+.left_column_end {
+  margin: 20px;
+}
+
+.bmr_macro_input {
+  width:15%;
+  display: inline;
+}
+
+/* Grid CSS */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-gap: 10px;
+  background-color: #534A7F;
+  padding: 10px;
+  height: 600px;
+  /* color: white; */
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.item1 {
+	grid-area: 1 / 1 / 5 / 2;
+}
+/* .item2 {
+  grid-area: 1 / 2 / 5 / 3; */
+  /* padding: 0px;
+  margin:0px; */
+/* } */
+/* .item3 {
+  grid-area: 1 / 3 / 5 / 7  ;
+} */
+
+/* Grid CSS */
+
+/* Slider CSS */
+
+.dropdown {
+  margin: 5px;
+  text-align-last:center;
+}
+
+
+/* #bmr_button {
+  text-align-last:center;
+} */
+
+
+/* Chart CSS */
+
+#myChart{
+  padding: 0px;
+}
+
+/* Chart CSS */

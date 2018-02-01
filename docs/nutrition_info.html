@@ -1,0 +1,155 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <title>
+
+        Nutrition | Eli
+
+    </title>
+
+
+      <link href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
+      <link href="../assets/css/toolkit-minimal.css" rel="stylesheet">
+      <link href="../assets/css/application-minimal.css" rel="stylesheet">
+
+      <!-- Personal CSS -->
+      <link href="../assets/css/personal.css" rel="stylesheet">
+      <!-- CSS For This Page -->
+      <link href="../assets/css/personal.css" rel="stylesheet">
+      <!-- Chart.js -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+
+    <style>
+      /* note: this is a hack for ios iframe for bootstrap themes shopify page */
+      /* this chunk of css is not part of the toolkit :) */
+      /* …curses ios, etc… */
+      @media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+        body {
+          width: 1px;
+          min-width: 100%;
+          *width: 100%;
+        }
+        #stage {
+          height: 1px;
+          overflow: auto;
+          min-height: 100vh;
+          -webkit-overflow-scrolling: touch;
+        }
+      }
+    </style>
+  </head>
+
+
+<body>
+
+
+
+
+<div class="container pt-4">
+  <nav class="navbar navbar-light navbar-toggleable-sm navbar-static-top text-uppercase app-navbar mb-5">
+
+      <a class="navbar-brand mr-auto" href="../index.html">
+        <span>DietofTh3Lourde</span>
+      </a>
+
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="nav navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="../index.html">Marketing</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="nutrition.html">Nutrition</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="graphs.html">Graphs</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+</div>
+
+<!-- Link to BMI Page -->
+
+<div class="block-bordered-lg">
+  <hr class="style-one">
+  <div class="container">
+    <div>
+      <h1 class="title_message">BMI: Body Mass Index</h1>
+      <br>
+      <h2>Welcome to the BMI Test</h2>
+      <h3>Finding your BMI allows you to...</h3>
+      <ol>
+        <li>Get an idea about how you measure up</li>
+        <li>Compare yourself to people with a lower body fat %</li>
+        <li>Get feedback from a test that doesn't take into consideration your body type nor metabolism</li>
+      </ol>
+
+      <h2 class="landing_page">Take the test today!</h2>
+
+      <button type="submit" name="button" id="reDirect">Go!</button>
+    </div>
+  </div>
+
+<br>
+
+  <hr class="style-one">
+
+<br>
+
+
+  <!-- Link to BMR -->
+
+    <div class="block-bordered-lg">
+      <div class="container">
+
+        <h1 class="title_message">BMR: Basal Metabolic Rate (AKA How Many Calories You Need to be a couched patato)</h1>
+        <br>
+        <h2>Welcome to the BMR Test</h2>
+        <h3>Finding your BMR allows you to...</h3>
+        <ol>
+          <li>Get a real idea of how many calories you need</li>
+          <li>Give you the opportunity to operate at comfortable calorie deficit</li>
+          <li>Feel comfortable knowing you are on track to a better you</li>
+        </ol>
+
+        <h2 class="landing_page">Take the test today!</h2>
+
+        <button type="submit" onclick="window.location.href='bmr_app.html'">Go!</button>
+
+      </div>
+    <div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</script>
+
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/tether.min.js"></script>
+    <script src="../assets/js/toolkit.js"></script>
+    <script src="../assets/js/application.js"></script>
+    <script src="../assets/js/personal.js"></script>
+
+    <!-- JS for this page -->
+    <script src="../assets/js/nutrition_info.js"></script>
+  </body>
+</html>

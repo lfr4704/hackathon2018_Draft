@@ -1,0 +1,199 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <title>
+
+        Nutrition Form | Eli
+
+    </title>
+
+
+      <link href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
+      <link href="../assets/css/toolkit-minimal.css" rel="stylesheet">
+      <link href="../assets/css/application-minimal.css" rel="stylesheet">
+
+      <!-- Personal CSS -->
+      <link href="../assets/css/personal.css" rel="stylesheet">
+      <!-- Personal CSS for the page -->
+      <link href="../assets/css/nutrition_info.css" rel="stylesheet">
+      <!-- Chart.js -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+
+    <style>
+      /* note: this is a hack for ios iframe for bootstrap themes shopify page */
+      /* this chunk of css is not part of the toolkit :) */
+      /* …curses ios, etc… */
+      @media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+        body {
+          width: 1px;
+          min-width: 100%;
+          *width: 100%;
+        }
+        #stage {
+          height: 1px;
+          overflow: auto;
+          min-height: 100vh;
+          -webkit-overflow-scrolling: touch;
+        }
+      }
+    </style>
+  </head>
+
+
+<body onload="showMetric()">
+
+
+
+
+<div class="container pt-4">
+  <nav class="navbar navbar-light navbar-toggleable-sm navbar-static-top text-uppercase app-navbar mb-5">
+    <button
+      class="navbar-toggler navbar-toggler-right hidden-md-up"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarResponsive"
+      aria-controls="navbarResponsive"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <a class="navbar-brand mr-auto" href="../index.html">
+      <span>DietofTh3Lourde</span>
+    </a>
+
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="../index.html">Marketing</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="nutrition_info.html">Nutrition</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="graphs.html">Graphs</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+      </ul>
+    </div>
+</nav>
+</div>
+
+<div class="block-bordered-lg">
+  <hr class="style-one">
+  <div class="container">
+    <div>
+      <h1 class="title_message">BMI Test:</h1>
+    </div>
+
+
+      <div class="container">
+        <div class="bmi_option">
+          <h1 class="m_i" id="bmi_metric">Metric</h1>
+          <h1 class="m_i" id="bmi_imperial">Imperial</h1>
+        </div>
+
+        <br>
+
+        <div class="grid-container">
+          <div class="item1">
+            <div class="form-group">
+              <label for="formGroup">Weight</label>
+              <input type="input" class="form-control" id="weight" placeholder="Kilograms">
+              <!-- <input type="number" class="form-control" id="weight_imp" placeholder="Pounds"> -->
+            </div>
+          </div>
+          <div class="item2">
+            <div class="form-group">
+              <label for="formGroup">Height</label>
+              <input type="input" class="form-control" id="height" placeholder="Meters">
+              <input type="input" class="form-control" id="inches" placeholder="inches">
+            </div>
+          </div>
+          <div class="item3">
+            <button class="btn btn-primary mb-3 grid2" id="bmi_button">Get started</button>
+          </div>
+          <div class="item4">
+            <div class="grid" id="bmi">
+              <h1 id="result">Your BMI Is:</h1>
+            </div>
+          </div>
+          <div class="item5">
+            <canvas id="myChart" style="width:400px;height:200px;"></canvas>
+          </div>
+        </div>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<script>
+//Bar Chart
+var ctx = document.getElementById("myChart").getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+        labels: ["UnderWeight 12-18", "Healthy 18-24", "OverWeight 25-29", "Obese 30-39", "Extremely Obese 40-42"],
+        datasets: [{
+            label: '# of Votes',
+            data: [18, 24, 29, 39, 42],
+            backgroundColor: [
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(255, 159, 64, 0.2)',
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(153, 102, 255, 0.2)'
+
+            ],
+            borderColor: [
+                'rgba(54, 162, 235, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(255, 159, 64, 1)',
+                'rgba(255,99,132,1)'
+
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+});
+
+
+</script>
+
+
+
+
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/tether.min.js"></script>
+    <script src="../assets/js/toolkit.js"></script>
+    <script src="../assets/js/application.js"></script>
+    <script src="../assets/js/personal.js"></script>
+  </body>
+</html>
