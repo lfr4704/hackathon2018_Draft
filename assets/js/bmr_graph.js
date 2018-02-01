@@ -7,9 +7,9 @@ var bmr = Math.round(localStorage.getItem("storageName"), 0);
 $('#BMR_text').html(bmr);
 
 //Gives base percentages based upon BMR
-$('#carb_calories').html(Math.round((55/100 * bmr),0));
-$('#fat_calories').html(Math.round((20/100 * bmr),0));
-$('#protein_calories').html(Math.round((25/100 * bmr),0));
+$('#carb_calories').html(Math.round(((55/100 * bmr)/4),0));
+$('#fat_calories').html(Math.round(((20/100 * bmr)/9),0));
+$('#protein_calories').html(Math.round(((25/100 * bmr)/4),0));
 
 
 
@@ -23,7 +23,7 @@ carb_output.innerHTML = carbSlider.value;
 
 carbSlider.oninput = function() {
   carb_output.value = this.value;
-  carbs.html(Math.floor(this.value/100 * bmr));
+  carbs.html(Math.floor((this.value/100 * bmr)/4));
 }
 // Code for fat slider
 var fatSlider = document.getElementById("fat_slider");
@@ -33,7 +33,7 @@ fat_output.innerHTML = fatSlider.value;
 
 fatSlider.oninput = function() {
   fat_output.value = this.value;
-  fat.html(Math.floor(this.value/100 * bmr));
+  fat.html(Math.floor((this.value/100 * bmr)/9));
 }
 // Code for protein slider
 var proteinSlider = document.getElementById("protein_slider");
@@ -43,7 +43,7 @@ protein_output.innerHTML = proteinSlider.value;
 
 proteinSlider.oninput = function() {
   protein_output.value = this.value;
-  protein.html(Math.floor(this.value/100 * bmr));
+  protein.html(Math.floor((this.value/100 * bmr)/4));
 }
 
 // function updateTextInput(val, macro) {
