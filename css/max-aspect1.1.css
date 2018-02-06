@@ -37,6 +37,15 @@ a {
   /* font-size: 32px; */
 }
 
+img {
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+
+}
+
+
 a:hover {
   color:#FEE9B1;
 }
@@ -208,7 +217,8 @@ video {
 }
 
 .arrow {
-  padding-left: 3vw;
+  padding-left: 2vw;
+  /* font-size: 32px; */
 }
 
 .message-head {
@@ -229,10 +239,124 @@ video {
   /* width: 15vw; */
   width: 100%;
   height:100vh;
-  background-color: white;
+  /* background-color: white; */
   margin: auto 0;
   /* width: 100%; */
   z-index: 5;
   /* margin: 5vw; */
   /* padding-left: 5vw; */
 }
+
+.grey-border {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+
+}
+
+.content-container {
+  /* padding-top: 50%; */
+  height: 100vh;
+  width: 80%;
+  background-color: white;
+  margin: 0 auto;
+  padding-left: 10%;
+  padding-top: 6%;
+  /* vertical-align:bottom; */
+}
+
+.menu-content {
+  height: 100vh;
+  width: 80%;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.title {
+  /* background-color: #f2f2f2; */
+  position:absolute;
+  /* top: 0; */
+  padding: 0;
+  /* margin-bottom: 5%; */
+  margin: 0;
+  /* line-height: 30pt; */
+  font-size: 45px;
+  color:black;
+  /* height: 5vh; */
+  width: 35%;
+
+}
+
+.title-text {
+  /* float: left; */
+  background-color: transparent;
+  font-size: 42px;
+  text-align: left !important;
+  font-weight: 700;
+  /* margin-bottom: 8%; */
+  /* padding-bottom: 5vh; */
+}
+
+.description {
+  color:#FEE9B1;
+  background-color: #FEE9B1;
+  width: 75%;
+  height: 40vh;
+  padding-top: 8%;
+  margin-top: 1%;
+  /* width: 100vw; */
+  color: black;
+  z-index: 1;
+
+}
+
+.know-more {
+  background-color: black;
+  color:white;
+  width: 65%;
+  height:15%;
+}
+
+.description-text {
+  /* background-color: brown; */
+  margin: 0;
+  /* height: 5%; */
+  /* width: 25%; */
+  padding-left: 3vw;
+  padding-right: 5vw;
+  padding-bottom: 1vh;
+  font-size: 30px;
+  line-height: 1.5;
+  /* color:white; */
+}
+
+.img {
+  position: absolute;
+  right: 15%;
+  /* top: 15%; */
+  margin-top: 28.5vh;
+  height: 35vh;
+  /* background-color: grey; */
+  width: 20vw;
+  z-index: 5;
+  float: right;
+  /* bottom:0; */
+}
+
+.moar-space {
+  margin: 2%;
+}
+
+.know-more-text {
+  padding: 5% 10%;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.know-more-text:hover {
+  font-size: 28px;
+  padding: 4.5% 8%;
+  /* color:white; */
+}
+
+/* Space Holder */
