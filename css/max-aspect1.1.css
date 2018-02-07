@@ -54,7 +54,6 @@ video {
   object-fit:fill;
   width: 100%;
   height: 100%;
-  /* width="100%" height="125%" object-fit:contain */
 }
 
 .container {
@@ -284,6 +283,7 @@ video {
   color:black;
   /* height: 5vh; */
   width: 35%;
+  z-index: 5;
 
 }
 
@@ -310,6 +310,21 @@ video {
 
 }
 
+.description.start {
+  color:yellow;
+  background-color: #FEE9B1;
+  width: 75%;
+  height: 40vh;
+  padding-top: 8%;
+  margin-top: 1%;
+  /* width: 100vw; */
+  color: black;
+  z-index: 1;
+
+}
+
+
+
 .know-more {
   background-color: black;
   color:white;
@@ -331,15 +346,18 @@ video {
 }
 
 .img {
+  float: right;
   position: absolute;
-  right: 15%;
+  left: 45vw;
+  /* right:-13%; */
   /* top: 15%; */
-  margin-top: 28.5vh;
+  margin-top: 30.5vh;
   height: 35vh;
   /* background-color: grey; */
-  width: 20vw;
+  width: 30vw;
   z-index: 5;
-  float: right;
+  /* float: right; */
+  padding-left: 15vw;
   /* bottom:0; */
 }
 
@@ -359,4 +377,70 @@ video {
   /* color:white; */
 }
 
-/* Space Holder */
+/* Image CSS */
+.cookies {
+  height: 125vh !important;
+  padding-top: 6.375vh;
+  padding-left: 12%;
+}
+
+.cakes {
+  height: 125vh !important;
+  padding-left: 12%;
+  padding-top: 6.375vh;
+
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 45vh;
+  background-color: black;
+}
+
+.footer-link {
+  /* background-color: white; */
+  width: 40%;
+  height:25vh;
+  padding-top: 3vh;
+}
+
+.footer-head {
+  color: white;
+  padding-left: 8vw;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.footer-list {
+  color: white;
+  padding: 0px;
+  text-align: left;
+  padding-left: 10vw;
+  font-size: 30px;
+}
+
+.footer-list-ul {
+  padding-bottom: 10vh;
+}
+
+.footer-conclusion {
+  float:right;
+  padding: none;
+  padding-right: 5vw;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+.heart {
+  font-size: 125%;
+}
+
+
+
+
+
+
+/* Space */
