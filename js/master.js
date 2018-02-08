@@ -9,7 +9,12 @@
 // var animateVar = true
 document.getElementById("animateUp").addEventListener("click", function() {
     // var elementToSlide = document.getElementById("mymenu");
-    $( "#mymenu" ).fadeToggle( "slow", "linear" );
-    document.getElementById("black-menu").classList.toggle("is-active");
+    var width = $(window).width();
+
+    // alert(width);
+    if (width >= 1025){
+      $( "#mymenu" ).fadeToggle( "slow", "linear" );
+      document.getElementById("black-menu").classList.toggle("is-active");
+    }
     // $('li').style
 });

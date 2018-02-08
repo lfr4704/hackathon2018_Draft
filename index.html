@@ -7,58 +7,16 @@
     <!-- Main CSS -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-
-
-    <!-- <link rel="stylesheet" media="(max-width: 640px)" href="max-640px.css"> -->
-    <!-- Template -->
-  <!-- <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css" /> -->
-<!--
-  <link rel="stylesheet" href="css/fonts/stylesheet.css" />
-  <link rel="stylesheet" href="css/fonts/fonts.css" />
-  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/animat/animate.min.css" /> -->
-  <!-- <link rel="stylesheet" href="css/fancybox/jquery.fancybox.css" /> -->
-  <!-- <link rel="stylesheet" href="css/nivo-lightbox/nivo-lightbox.css" />
-  <link rel="stylesheet" href="css/themes/default/default.css" />
-  <link rel="stylesheet" href="css/owl-carousel/owl.carousel.css" />
-  <link rel="stylesheet" href="css/owl-carousel/owl.theme.css" />
-  <link rel="stylesheet" href="css/owl-carousel/owl.transitions.css"> -->
-
-
-
-  <link rel="stylesheet" href="css/style.css" />
-  <!-- <link rel="stylesheet" href="css/responsive.css" /> -->
-
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/mobile.css">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
   <!-- MasterCSS -->
   <!-- <link rel="stylesheet" href="css/master.css"/> -->
   <!-- Responsive -->
+  <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/max-aspect1.1.css"/>
-  <!-- Mobile -->
-  <!-- <link rel="stylesheet" href="css/mobile.css"> -->
-  <!-- Mobile Font -->
-  <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> -->
-
-  <!-- <link rel="stylesheet" href="css/master.css"/> -->
-  <!-- Responsive -->
-  <!-- <link rel="stylesheet" href="css/max-aspect1.1.css"/> -->
-  <!-- Mobile -->
-  <!-- <link rel="stylesheet" href="css/mobile.css"> -->
-  <!-- Mobile Font -->
-  <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> -->
-
-
-  <!-- <link rel="stylesheet" href="css/direction-reveal.css"> -->
-  <!-- contact us form -->
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-  <!-- google icons -->
-  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
-
-    <!-- contact_mapsCSS -->
-  <!-- <link rel="stylesheet" href="css/contact_maps.css"/> -->
-
     <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -68,15 +26,18 @@
   <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css">
   <link rel="stylesheet" href="css/aos-master/demo/css/styles.css" />
   <link rel="stylesheet" href="css/aos-master/dist/aos.css" />
+  <link rel="stylesheet" href="css/mobile2.css">
+  <link rel="stylesheet" href="css/mobile3.css">
 
 
 
   </head>
   <body data-spy="scroll" data-target="#mymenu" data-offset="50">
+      <div id="home-page">
       <div class="home_left">
         <div class="container">
           <div class="landing-page-message">
-            <h1 class="message-head">Great Coffe.</h1>
+            <h1 class="message-head">Great <span id="greatCoffee">Coffee.</span></h1>
             <p class="message-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </div>
         </div>
@@ -85,21 +46,18 @@
       </div>
       <div class="home_right">
         <video src="video/MyCoffee.mp4" autoplay loop="loop">
-        <!-- </video> -->
+        </video>
 
 
       </div>
       <div class="bottom-right">
-        <p id="contact">Contact <span class="arrow">&rarr;</span></p>
+        <p id="contact"><a href="contact.html" id="contact-link">Contact</a><span class="arrow">&rarr;</span></p>
 
 
       </div>
       <div class="center-bottom" id="black-menu">
-              <ul>
-              <li>
-              </li>
-
-            </ul>
+              <!-- <ul>
+            </ul> -->
             <ul id="mymenu">
               <li><a href="#coffee">Coffee</a></li>
               <li><a href="#cookies">Cookies</a></li>
@@ -112,12 +70,16 @@
               </div>
             </div>
       </div>
+    </div>
 
       <div id="coffee">
         <div class="grey-border">
           <div class="content-container">
             <br>
             <br>
+            <div class="space">
+
+            </div>
             <div class="title" data-aos="fade-down">
               <p class="title-text animated slideInDown">Coffee.</p>
             </div>
@@ -133,14 +95,18 @@
               </div>
             </div>
             <div data-aos="fade-up" class="know-more">
-              <p class="know-more-text">Know More <span class="arrow">&#x27F6;<span></p>
+              <p class="know-more-text">Know More <span class="know-arrow">&#x27F6;<span></p>
             </div>
           </div>
         </div>
       </div>
 
+
       <div id="cookies">
         <div class="grey-border">
+          <div class="space">
+
+          </div>
           <div class="content-container">
             <br>
             <br>
@@ -159,7 +125,7 @@
               </div>
             </div>
             <div data-aos="fade-up" class="know-more">
-              <p class="know-more-text">Know More <span class="arrow">&#x27F6;<span></p>
+              <p class="know-more-text">Know More <span class="know-arrow">&#x27F6;<span></p>
             </div>
           </div>
         </div>
@@ -167,6 +133,9 @@
 
       <div id="cakes">
         <div class="grey-border">
+          <div class="space">
+
+          </div>
           <div class="content-container">
             <br>
             <br>
@@ -185,14 +154,17 @@
               </div>
             </div>
             <div data-aos="fade-up" class="know-more">
-              <p class="know-more-text">Know More <span class="arrow">&#x27F6;<span></p>
+              <p class="know-more-text">Know More <span class="know-arrow">&#x27F6;<span></p>
             </div>
           </div>
         </div>
       </div>
 
+      <div class="grey-border">
+        <div class="space">
       <div id="burritos">
-        <div class="grey-border">
+
+          </div>
           <div class="content-container">
             <br>
             <br>
@@ -203,18 +175,21 @@
             <div class="img">
               <div data-aos="fade-left">
                 <img src="images/mobile/burritos.jpg" alt="">
+              </div>
             </div>
-          </div>
             <div class="description animated fadeIn" data-aos="fade-right">
               <div>
                 <p class="description-text">Lore ipsum dolor sit amet, consect adipisicing Lore ipsum dolor sit amet, consect adipisicing Lore ipsum dolor sit amet, consect adipisicing</p>
               </div>
             </div>
             <div data-aos="fade-up" class="know-more">
-              <p class="know-more-text">Know More <span class="arrow">&#x27F6;<span></p>
+              <p class="know-more-text">Know More <span class="know-arrow">&#x27F6;<span></p>
             </div>
           </div>
         </div>
+      </div>
+      <div class="space">
+
       </div>
 
 

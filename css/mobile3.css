@@ -1,0 +1,109 @@
+@media only screen and (max-width:561px) {
+
+/* #coffee, */
+ /* #cookies, #cakes, #burritos, footer {
+  display: none;
+} */
+
+video {
+  display: inline;
+}
+
+.img {
+  padding: 0;
+  left:30vw !important;
+}
+
+#black-menu {
+  height: 60vh;
+}
+
+.animateUp {
+  padding-bottom: 0;
+}
+
+.bottom-right{
+  display: inline;
+  /* bottom: 0; */
+  width: 100vw;
+  height: 25vh;
+  bottom:0vh;
+  color: black;
+  /* padding: 0; */
+}
+
+.landing-page-message {
+  width: 100vw;
+  height: 45vh;
+  background-color: black;
+}
+
+.message-text {
+  /* padding: 5vw 5vh; */
+}
+
+#contact {
+  display: block;
+  color: black;
+  padding-bottom: 10vh !important;
+}
+
+.arrow {
+  color:black;
+}
+
+.home_left {
+  display: inline;
+  top: 0;
+  width: 55vw;
+}
+
+.message-head {
+  padding-top: 10vh;
+  padding-left: 0vw;
+}
+
+.home_right {
+  display:inline;
+  height: 35vh;
+  top:40vh;
+  width: 100vw;
+}
+
+.content-container {
+  position: absolute;
+  width: 100vw;
+  padding: 0;
+  margin-top: 60vh;
+  padding-left: 20vw;
+  height: 100vh;
+}
+
+.title-text {
+  color:black !important;
+}
+
+.description-text {
+  display: none;
+
+}
+
+.description {
+  height: 10vh !important;
+  padding-top: 25vh;
+}
+
+.know-more {
+  /* padding-right:25vw; */
+  width: 68vw;
+  height: 15vh;
+}
+
+.space {
+  width: 25vw;
+  background-color: black !important;
+}
+
+
+
+}

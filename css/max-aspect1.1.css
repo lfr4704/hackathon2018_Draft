@@ -1,12 +1,12 @@
 /* <<<<<<< HEAD */
-@media (min-width:561px) {
+@media only screen and (min-width:561px) {
 /* ======= */
 /* @media (min-width:769px) { */
 /* >>>>>>> 965c6ffad524ea9119a71943b3f072c9eb961c7c */
   #mobile-content {
     display: none;
   }
-}
+
 /* Standardize Page */
 html, body, h1, p, div {
  margin: 0px;
@@ -100,6 +100,7 @@ video {
     height: 600vh;
     /* background-color: black; */
     /* background-color: green; */
+    background-color: white;
     /* height:150px; */
   }
 
@@ -155,9 +156,9 @@ video {
   transition: height 500ms;
 }
 
-.center:hover {
+/* .center:hover {
   height:100vw;
-}
+} */
 
 #desk-menu {
   position: absolute;
@@ -211,13 +212,25 @@ video {
 
 #contact:hover {
   font-size: 36px;
-  padding: 12% 2%;
+  padding: 12% 16%;
   /* color:white; */
+}
+
+.know-arrow {
+  padding: 0;
+  font-size: 35px;
+  padding-top: 5vh;
+  padding-left: 2vw;
 }
 
 .arrow {
   padding-left: 2vw;
-  /* font-size: 32px; */
+  font-size: 44px;
+  /* color: white; */
+}
+
+.arrow:hover {
+  padding-left: 5vw;
 }
 
 .message-head {
@@ -438,9 +451,11 @@ footer {
   font-size: 125%;
 }
 
+#contact-link {
+  color: black;
+}
 
 
-
-
+}
 
 /* Space */
