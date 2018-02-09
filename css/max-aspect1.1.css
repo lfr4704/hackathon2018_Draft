@@ -455,6 +455,10 @@ footer {
   color: black;
 }
 
+.mobile-content {
+  display: none;
+}
+
 
 }
 

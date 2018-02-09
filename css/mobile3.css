@@ -1,12 +1,64 @@
 @media only screen and (max-width:561px) {
 
-/* #coffee, */
- /* #cookies, #cakes, #burritos, footer {
+#coffee{
+   display: none;
+ }
+
+body {
+  height: 100vh !important;
+}
+
+#cookies, #cakes, #burritos, .content-container, .grey-border, footer{
+  font-family: 'Montserrat', sans-serif;
   display: none;
-} */
+}
+
+#mobile-content {
+  display: block;
+  background-color: black;
+  height: 18vh;
+  width: 100vw;
+}
+
+#mobile-menu {
+  text-align: center;
+  padding-top: 5vh;
+  font-weight: 300;
+  color: white !important;
+}
+
+footer, .footer-link, .footer-head, .footer-conclusion {
+  background-color: black;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+
+}
+
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+a {
+  text-decoration: none;
+  font-weight: 700;
+}
 
 video {
   display: inline;
+  max-width: 100vw;
+}
+
+#contact {
+  color:black;
+  font-size: 30px;
+  height: 20vh;
+}
+
+#contact-link {
+  color:black;
+  font-size: 40px;
 }
 
 .img {
@@ -34,18 +86,33 @@ video {
 
 .landing-page-message {
   width: 100vw;
-  height: 45vh;
+  height: 40vh;
   background-color: black;
+  text-align: center;
 }
 
 .message-text {
+  text-align: center;
+  font-weight: 300;
+  padding-bottom: 0;
+  margin-bottom: 0;
   /* padding: 5vw 5vh; */
 }
 
 #contact {
   display: block;
   color: black;
-  padding-bottom: 10vh !important;
+  padding: 0vh 5vw;
+  /* padding-bottom: 10vh !important; */
+  background-color:#FEE9B1;
+  margin: 0;
+  height: 10vh;
+  width: 90vw;
+  /* margin-top: 25vh; */
+  text-align: center;
+  /* position: absolute; */
+  /* bottom: 0; */
+  /* z-index: 8; */
 }
 
 .arrow {
@@ -101,9 +168,22 @@ video {
 
 .space {
   width: 25vw;
-  background-color: black !important;
+  /* background-color: black !important; */
 }
 
+/* #coffee {
+  display: block;
+  background-color: grey;
+  height: 45vh;
+} */
+
+.title {
+  display: inline;
+}
+
+/* .content-container {
+  display: inline;
+} */
 
 
 }

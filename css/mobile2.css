@@ -55,6 +55,7 @@ video {
 #black-menu.is-active {
   height:80vh;
   transition: height 500ms;
+  display: inline;
 }
 
 
@@ -112,6 +113,7 @@ video {
 
 .space {
   padding-top: 115vh;
+  background-color: white !important;
 }
 .description {
   width: 75vw;
